@@ -8,13 +8,13 @@ import { LOCATIONS } from './reducers';
 
 import actions from './actions';
 
-import crewMembers from './reducers';
+import starTrekApp from './reducers';
 
 import { ships } from './reducers';
 
 import { createStore } from 'redux';
 
-const store = createStore(ships);
+const store = createStore(starTrekApp);
 
 
 window.store = store;

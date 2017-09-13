@@ -47,16 +47,16 @@ const crewMembers = (state=[], action) => {
         ]
         
         case actions.BEAM_MEMBER:
-            return state.map( (crewMember) => {
+            return state.map( (crewMembers) => {
                 // if the id matches, then update the location, ottherwise just return the crewMember.
-                if (action.id === crewMember.id) {
+                if (action.id === crewMembers.id) {
                     //make a copy maybe???? of the crewMember
                     //but changing the location
                     // if (action.location in LOCATIONS) {
 
                     // }
 
-                    let newLocation = crewMember.location;
+                    let newLocation = crewMembers.location;
                     if (action.location in LOCATIONS) {
                         newLocation = action.location;
                     }
@@ -68,13 +68,13 @@ const crewMembers = (state=[], action) => {
                 
                 // This is equivalent to above.
                 return {
-                    ...crewMember,
+                    ...crewMembers,
                     location: newLocation
                 }
 
 
                 } else {
-                    return crewMember;
+                    return crewMembers;
                 }
             });
         default:

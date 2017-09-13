@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Spaceship from './Spaceship';
-import CrewMember from './CrewMember';
+import CrewMembers from './CrewMember';
 import BadAlien from './BadAlien';
 import Planet from './Planet';
 
