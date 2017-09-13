@@ -17,7 +17,7 @@ class App extends Component {
             <CrewMember name="Kirk" rank="Captain" />
             <BadAlien name="Khan" species="Super weird" />
         </Planet>
-        <Spaceship name = 'Enterprise' 
+        <Spaceship name = 'Enterprise'
         commanderType = 'CrewMember'>
         <CrewMember name = 'Riker' rank='Commander' />
         <CrewMember name = 'Cool guy' rank='Captain' />
