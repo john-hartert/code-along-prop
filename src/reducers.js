@@ -19,15 +19,29 @@ const crewMembers = (state=[], action) => {
         case actions.BEAM_MEMBER:
             return state.map( (crewMember) => {
                 // if the id matches, then update the location, ottherwise just return the crewMember.
-                if (action.id === crewMember.id && action.location in LOCATIONS) {
+                if (action.id === crewMember.id) {
                     //make a copy maybe???? of the crewMember
                     //but changing the location
                     // if (action.location in LOCATIONS) {
 
                     // }
-                    return Object.assign({}, crewMember, {
-                        location: action.location
-                    });
+
+                    let newLocation = crewMember.location;
+                    if (action.location in LOCATIONS) {
+                        newLocation = action.location;
+                    }
+
+                    // ** Longer version of Object "cloning".
+                    // return Object.assign({}, crewMember, {
+                    //     location: action.location
+                    // });
+                
+                return {
+                    ...crewMember,
+                    location: newLocation
+                }
+
+
                 } else {
                     return crewMember;
                 }
