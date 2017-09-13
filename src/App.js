@@ -4,6 +4,7 @@ import './App.css';
 import Spaceship from './Spaceship';
 import CrewMember from './CrewMember';
 import BadAlien from './BadAlien';
+import Planet from './Planet';
 
 class App extends Component {
   render() {
@@ -11,6 +12,12 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
         </div>
+        <Planet name="asdsadf">
+
+            <CrewMember name="Uhuru" rank="Commander" />
+            <CrewMember name="Kirk" rank="Captain" />
+            <BadAlien name="Khan" species="Super weird" />
+        </Planet>
         <Spaceship name = 'Enterprise' 
         commanderType = 'CrewMember'>
         <CrewMember name = 'Riker' rank='Commander' />
