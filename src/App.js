@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Spaceship from './Spaceship';
+import CrewMember from './CrewMember';
 
 class App extends Component {
   render() {
