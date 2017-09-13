@@ -10,12 +10,24 @@ export const LOCATIONS = {
 const crewMembers = (state=[], action) => {
     switch (action.type) {
         case actions.ADD_MEMBER:
-            return state.concat({
+            // return state.concat({
+            // NICE IMMUTABLE WAY TO ADD ON TO AN ARRAY!!!!!
+            //     name: action.name,
+            //     rank: action.rank,
+            //     id: action.id,
+            //     location: action.location
+            // });
+
+        return [
+            ...state,
+            {
                 name: action.name,
                 rank: action.rank,
                 id: action.id,
                 location: action.location
-            });
+            }
+        ]
+        
         case actions.BEAM_MEMBER:
             return state.map( (crewMember) => {
                 // if the id matches, then update the location, ottherwise just return the crewMember.
@@ -36,6 +48,7 @@ const crewMembers = (state=[], action) => {
                     //     location: action.location
                     // });
                 
+                // This is equivalent to above.
                 return {
                     ...crewMember,
                     location: newLocation
