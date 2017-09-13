@@ -1,6 +1,11 @@
 // State and action are always passed in reducers.
-const crewMembers = (state=[], action) => {
+import actions from './actions';
 
+const crewMembers = (state=[], action) => {
+    switch (action.type) {
+        case actions.ADD_MEMBER:
+            
+    }
     return state;
 }
 

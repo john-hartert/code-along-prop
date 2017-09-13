@@ -5,7 +5,8 @@
 // {
 //     type: ADD_MEMBER,
 //     name: 'crusher',
-//     rank: 'chief medical officer'
+//     rank: 'chief medical officer',
+//     id: 12345
 // }
 
 const ADD_MEMBER = 'ADD_MEMBER';
