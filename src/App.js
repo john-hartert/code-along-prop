@@ -14,11 +14,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <Spaceship name = 'Enterprise' />
+        <Spaceship name = 'Enterprise' 
+        commanderType = 'CrewMember'>
         <CrewMember name = 'Riker' rank='Commander' />
         <CrewMember name = 'Cool guy' rank='Captain' />
         <BadAlien name = 'Borg' species = 'Borg' />
-        {/* </Spaceship> Why isn't this working */}
+        </Spaceship> 
       </div>
     );
   }
