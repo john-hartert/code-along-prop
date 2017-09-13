@@ -12,8 +12,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
         </div>
-        <Planet name="asdsadf">
-
+        <Planet name="Pluto">
             <CrewMember name="Uhuru" rank="Commander" />
             <CrewMember name="Kirk" rank="Captain" />
             <BadAlien name="Khan" species="Super weird" />
