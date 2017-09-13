@@ -4,6 +4,7 @@ import './App.css';
 
 import Spaceship from './Spaceship';
 import CrewMember from './CrewMember';
+import BadAlien from './BadAlien';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <Spaceship name = 'Enterprise' />
         <CrewMember name = 'Riker' rank='Commander' />
         <CrewMember name = 'Cool guy' rank='Captain' />
+        <BadAlien name = 'Borg' species = 'Borg' />
         {/* </Spaceship> Why isn't this working */}
       </div>
     );
