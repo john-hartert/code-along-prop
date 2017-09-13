@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 // Render is the only lifecycle method required for a class component.
 class Spaceship extends Component {
     static propTypes = {
