@@ -14,6 +14,9 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <Spaceship name = 'Enterprise' />
+        <CrewMember name = 'Riker' rank='Commander' />
+        <CrewMember name = 'Cool guy' rank='Captain' />
+        {/* </Spaceship> Why isn't this working */}
       </div>
     );
   }
