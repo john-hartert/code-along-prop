@@ -1,3 +1,5 @@
-- Practice using Proptypes with react.
+- Practices using Proptypes with react.
 
 - Brings in Redux.
+
+- Practices using spread operators.

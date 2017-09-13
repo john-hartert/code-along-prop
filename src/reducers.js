@@ -18,6 +18,9 @@ const crewMembers = (state=[], action) => {
             //     location: action.location
             // });
 
+
+
+        // Equivalent to state.concat version, but using the array spread operator.
         return [
             ...state,
             {
